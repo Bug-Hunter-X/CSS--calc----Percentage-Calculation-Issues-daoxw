@@ -1,0 +1,9 @@
+Instead of relying solely on percentages within `calc()`, consider using viewport units (`vw`, `vh`) for dimensions relative to the browser window or explicitly setting dimensions based on known parent sizes or using JavaScript to dynamically calculate values.  Here's an example using `vw`:
+
+```css
+/* bugSolution.css */
+#element {
+  width: calc(50vw - 10px);
+}
+```
+This approach ensures that the calculation is based on a consistent reference (the viewport width) regardless of the parent element's dimensions.
